@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>天天抽奖</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../static/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/prize-draw.css" />
+    <script src="../static/lib/flexible.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/lib/jquery.1.8.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/js/prize-draw-mvc.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <div class="before-loaded" >
+      <img src="../static/images/loading.gif" alt="">
+    </div>
+    <section class="bhz-mod-content" style="display:none;">
+
+      <div class="header-bar">
+        <div class="left text-gold">
+          <i class="iconfont icon-hot"></i> 爱豆
+          <span class="text-green">1256</span>
+        </div>
+        <div class="right text-gold">
+          <div class="my-records-btn">
+            <i class="iconfont icon-paperairplane"></i> 我的记录
+          </div>
+        </div>
+      </div>
+
+      <div class="list-shadow" style="position:fixed;left:0;top:0;right:0;bottom:0;background-color:rgba(0, 0, 0, 0.5);z-index:250;display:none;" ></div>
+      <section id="my-records" class="bhz-mod-bottom" style="display:none">
+        <section class="bhz-mod-bottom-item">
+          <div class="bmb-item-header">
+            <div class="bmb-item-header-left">2016-12-10 12:12:36</div>
+            <div class="bmb-item-header-right">
+              共投<span class="bmb-num">100</span>爱豆
+            </div>
+          </div>
+          <div class="bmb-item-body">
+            <div class="bmb-item-body-left">开奖结果</div>
+            <div class="bmb-item-body-right">
+              <span class="bmb-result-fail">未中奖</span>
+            </div>
+          </div>
+        </section>
+        <section class="bhz-mod-bottom-item">
+          <div class="bmb-item-header">
+            <div class="bmb-item-header-left">2016-12-10 12:12:36</div>
+            <div class="bmb-item-header-right">
+              共投<span class="bmb-num">100</span>爱豆
+            </div>
+          </div>
+          <div class="bmb-item-body">
+            <div class="bmb-item-body-left">开奖结果</div>
+            <div class="bmb-item-body-right">
+              <div class="bmb-result-win text-red">
+                  <i class="bhz-ico bhz-ico-icon-trophy"></i>
+              共中<span class="bmb-win-num">200</span>爱豆
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bhz-mod-bottom-item">
+          <div class="bmb-item-header">
+            <div class="bmb-item-header-left">2016-12-10 12:12:36</div>
+            <div class="bmb-item-header-right">
+              共投<span class="bmb-num">100</span>爱豆
+            </div>
+          </div>
+          <div class="bmb-item-body">
+            <div class="bmb-item-body-left">开奖结果</div>
+            <div class="bmb-item-body-right">
+              <span class="bmb-result-fail">未中奖</span>
+            </div>
+          </div>
+        </section>
+        <section class="bhz-mod-bottom-item">
+          <div class="bmb-item-header">
+            <div class="bmb-item-header-left">2016-12-10 12:12:36</div>
+            <div class="bmb-item-header-right">
+              共投<span class="bmb-num">100</span>爱豆
+            </div>
+          </div>
+          <div class="bmb-item-body">
+            <div class="bmb-item-body-left">开奖结果</div>
+            <div class="bmb-item-body-right">
+              <div class="bmb-result-win text-red">
+                  <i class="bhz-ico bhz-ico-icon-trophy"></i>
+              共中<span class="bmb-win-num">200</span>爱豆
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bhz-mod-bottom-item">
+          <div class="bmb-item-header">
+            <div class="bmb-item-header-left">2016-12-10 12:12:36</div>
+            <div class="bmb-item-header-right">
+              共投<span class="bmb-num">100</span>爱豆
+            </div>
+          </div>
+          <div class="bmb-item-body">
+            <div class="bmb-item-body-left">开奖结果</div>
+            <div class="bmb-item-body-right">
+              <span class="bmb-result-fail">未中奖</span>
+            </div>
+          </div>
+        </section>
+        <section class="bhz-mod-bottom-item">
+          <div class="bmb-item-header">
+            <div class="bmb-item-header-left">2016-12-10 12:12:36</div>
+            <div class="bmb-item-header-right">
+              共投<span class="bmb-num">100</span>爱豆
+            </div>
+          </div>
+          <div class="bmb-item-body">
+            <div class="bmb-item-body-left">开奖结果</div>
+            <div class="bmb-item-body-right">
+              <div class="bmb-result-win text-red">
+                  <i class="bhz-ico bhz-ico-icon-trophy"></i>
+              共中<span class="bmb-win-num">200</span>爱豆
+              </div>
+            </div>
+          </div>
+        </section>
+        <a href="javascript:;" class="bhz-mod-more text-blue">
+          <span>查看更多</span>
+        </a>
+      </section>
+
+      <div class="bhz-mod-content-banner">
+        <img src="../static/images/prize-draw/001.jpg" alt="">
+        <div class="broadcast">
+          <i class="iconfont icon-broadcast"></i>
+          <ul>
+            <li>说好的中个锤子呢获得1元红包</li>
+            <li>说好的中个锤子呢获得1元优惠券</li>
+            <li>说好的中个锤子呢获得1元红包</li>
+            <li>说好的中个锤子呢获得1元红包</li>
+            <li>说好的中个锤子呢获得1元红包</li>
+            <li>说好的中个锤子呢获得1元红包</li>
+            <li>说好的中个锤子呢获得1元红包</li>
+            <li>说好的中个锤子呢获得1元红包</li>
+            <li>说好的中个锤子呢获得1元红包</li>
+            <li>说好的中个锤子呢获得1元红包</li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button id="my-prize-btn" class="btn btn-img">
+            <p>我的奖品</p>
+          </button>
+          <button id="activity-rule-btn" class="btn btn-img">
+            <p>活动规则</p>
+          </button>
+        </div>
+      </div>
+
+      <ul class="bhz-mod-prizeDraw-list">
+        <li id="item-1" class="bmp-list-item">
+          <div class="prize highlight">
+            
+          </div>
+          
+        </li>
+        <li id="item-2" class="bmp-list-item">
+          <div class="prize">
+            
+          </div>
+          
+        </li>
+        <li id="item-3" class="bmp-list-item">
+          <div class="prize">
+            
+          </div>
+          
+        </li>
+        <li id="item-8" class="bmp-list-item">
+          <div class="prize">
+            
+          </div>
+          
+        </li>
+        <li id="start-btn" class="bmp-list-btn">
+          <div class="bmp-list-btn-start">
+            <img src="../static/images/prize-draw/start.jpg" alt="">
+          </div>
+          
+        </li>
+        <li id="item-4" class="bmp-list-item">
+          <div class="prize">
+            
+          </div>
+          
+        </li>
+        <li id="item-7" class="bmp-list-item">
+          <div class="prize">
+            
+          </div>
+          
+        </li>
+        <li id="item-6" class="bmp-list-item">
+          <div class="prize">
+            
+          </div>
+          
+        </li>
+        <li id="item-5" class="bmp-list-item">
+          <div class="prize">
+            
+          </div>
+          
+        </li>
+      </ul> 
+      
+      <div class="btn-bar text-gold">
+        <div class="surplus-btn">
+          剩余 <span class="times text-green">3</span> 次抽奖
+        </div>
+        
+        
+      </div>
+
+      <div class="activity-rules" style="display:none">
+        <div class="activity-rules-content">
+          <h2>活动规则</h2>
+          <div class="rules-list">
+            <p>1.每次抽奖将扣除200爱豆</p>
+            <p>2.每次抽奖将扣除200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆</p>
+            <p>3.每次抽奖将扣除200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆</p>
+            <p>4.每次抽奖将扣除200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆</p>
+            <p>5.每次抽奖将扣除200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆</p>
+            <p>6.每次抽奖将扣除200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆</p>
+            <p>7.每次抽奖将扣除200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆</p>
+            <p>8.每次抽奖将扣除200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆</p>
+            <p>9.每次抽奖将扣除200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆200爱豆</p>
+          </div>
+          <div class="ensure-btn">确认</div>
+
+        </div>
+      </div>
+
+      <div class="win-view" style="display: none;">
+        <div class="win-view-content">
+          <h2 class="header">获得</h2>
+          <div class="body">100爱豆</div>
+          <div class="footer">
+            <div class="btn left">再抽一次</div>
+            <div class="btn right">去查看</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="no-more-chance" style="display:none">
+        <div class="tips">您今天的抽奖机会已用完</div>
+      </div>
+
+      <div class="unlogin" style="display:none">
+        <div class="tips">您还未登录,2s后自动跳转</div>
+      </div>
+      <div class="prizing" style="display:none">
+        <div class="tips">开奖中，请稍等...</div>
+      </div>
+      <div class="not-lottery" style="display:none">
+        <div class="tips">很遗憾，没中奖！</div>
+      </div>
+      <div class="lottery-error" style="display:none">
+        <div class="tips">开奖出错，请重试</div>
+      </div>
+    </section>
+    
+    
+    
+  </body>
+</html>
+
